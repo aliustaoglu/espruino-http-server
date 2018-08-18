@@ -1,7 +1,7 @@
 {
-  "name": "espruino-project",
-  "version": "1.0.0",
-  "description": "",
+  "name": "espruino-http-server",
+  "version": "0.0.1",
+  "description": "Espruino Boilerplate for ESP8266 server",
   "main": "index.js",
   "scripts": {
     "erase": "esptool.py --port /dev/cu.wchusbserial1420 erase_flash",
@@ -9,11 +9,13 @@
     "reset": "npm run erase && npm run flash",
     "reupload": "npm run reset && npm run upload",
     "uglify": "uglifyjs src/* --compress --mangle -o ./index.js ",
-    "upload": "npm run uglify && espruino -p /dev/cu.wchusbserial1420 -b 115200 --board boards/ESP8266_4MB.json -e 'save()' index.js"
+    "upload": "npm run uglify && espruino -p /dev/cu.wchusbserial1420 -b 115200 --board boards/ESP8266_4MB.json -e 'save()' index.js",
+    "screen": "screen /dev/cu.wchusbserial1420 115200"
   },
   "author": "Cuneyt Aliustaoglu",
   "license": "ISC",
   "devDependencies": {
+    "espruino": "^0.1.12",
     "uglify-js": "^3.4.7"
   }
 }
