@@ -1,0 +1,237 @@
+{
+ "info": {
+  "builtin_modules": [
+   "Flash", 
+   "Storage", 
+   "net", 
+   "dgram", 
+   "http", 
+   "NetworkJS", 
+   "Wifi", 
+   "ESP8266", 
+   "TelnetServer", 
+   "crypto", 
+   "neopixel"
+  ], 
+  "name": "ESP8266", 
+  "binary_version": "1v99", 
+  "variables": 1600, 
+  "default_console_baudrate": "115200", 
+  "binary_name": "espruino_%v_esp8266_4mb", 
+  "build": {
+   "libraries": [
+    "NET", 
+    "TELNET", 
+    "GRAPHICS", 
+    "CRYPTO", 
+    "SHA256", 
+    "SHA512", 
+    "NEOPIXEL"
+   ], 
+   "makefile": [
+    "FLASH_4MB=1", 
+    "ESP_FLASH_MAX=962560", 
+    "FLASH_BAUD=460800"
+   ]
+  }, 
+  "image_url": "http://www.espruino.com/img/ESP8266_4MB.jpg", 
+  "espruino_page_link": "EspruinoESP8266", 
+  "thumb_url": "http://www.espruino.com/img/ESP8266_4MB_thumb.jpg", 
+  "default_console": "EV_SERIAL1", 
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v99_esp8266_4mb"
+ }, 
+ "pins": [
+  {
+   "functions": {
+    "LED_1": 0
+   }, 
+   "name": "D0", 
+   "sortingname": "D00", 
+   "simplefunctions": {}, 
+   "num": "0", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "USART0_TX": 0
+   }, 
+   "name": "D1", 
+   "sortingname": "D01", 
+   "simplefunctions": {}, 
+   "num": "1", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "USART1_TX": 0
+   }, 
+   "name": "D2", 
+   "sortingname": "D02", 
+   "simplefunctions": {
+    "USART": [
+     "USART1_TX"
+    ]
+   }, 
+   "num": "2", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "USART0_RX": 0
+   }, 
+   "name": "D3", 
+   "sortingname": "D03", 
+   "simplefunctions": {}, 
+   "num": "3", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D4", 
+   "sortingname": "D04", 
+   "simplefunctions": {}, 
+   "num": "4", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D5", 
+   "sortingname": "D05", 
+   "simplefunctions": {}, 
+   "num": "5", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D6", 
+   "sortingname": "D06", 
+   "simplefunctions": {}, 
+   "num": "6", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D7", 
+   "sortingname": "D07", 
+   "simplefunctions": {}, 
+   "num": "7", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D8", 
+   "sortingname": "D08", 
+   "simplefunctions": {}, 
+   "num": "8", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D9", 
+   "sortingname": "D09", 
+   "simplefunctions": {}, 
+   "num": "9", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D10", 
+   "sortingname": "D10", 
+   "simplefunctions": {}, 
+   "num": "10", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D11", 
+   "sortingname": "D11", 
+   "simplefunctions": {}, 
+   "num": "11", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D12", 
+   "sortingname": "D12", 
+   "simplefunctions": {}, 
+   "num": "12", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D13", 
+   "sortingname": "D13", 
+   "simplefunctions": {}, 
+   "num": "13", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D14", 
+   "sortingname": "D14", 
+   "simplefunctions": {}, 
+   "num": "14", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D15", 
+   "sortingname": "D15", 
+   "simplefunctions": {}, 
+   "num": "15", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {}, 
+   "name": "D16", 
+   "sortingname": "D16", 
+   "simplefunctions": {}, 
+   "num": "16", 
+   "csv": {}, 
+   "port": "D"
+  }
+ ], 
+ "chip": {
+  "family": "ESP8266", 
+  "dac": 0, 
+  "ram": 80, 
+  "spi": 1, 
+  "part": "ESP8266", 
+  "speed": 160, 
+  "usart": 2, 
+  "package": "", 
+  "flash": 0, 
+  "adc": 1, 
+  "saved_code": {
+   "flash_available": 812, 
+   "pages": 48, 
+   "page_size": 4096, 
+   "address": 831488
+  }, 
+  "i2c": 1
+ }, 
+ "peripherals": {
+  "USART1": {
+   "TX": [
+    "D2"
+   ]
+  }
+ }, 
+ "devices": {}
+}
