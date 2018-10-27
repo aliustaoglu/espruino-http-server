@@ -2,8 +2,8 @@ var MQTT = require('https://github.com/aliustaoglu/tinyMQTT/blob/master/tinyMQTT
 var mqtt = null;
 
 E.on('init', function() {
-  var WIFI_NAME = 'SPARK-PLWZV6';
-  var WIFI_OPTIONS = { password: 'LKYEM8VVH6' };
+  var WIFI_NAME = 'TOTOLINK_A3';
+  var WIFI_OPTIONS = { password: 'QWERTYUI' };
 
   var wifi = require('Wifi');
   wifi.connect(
