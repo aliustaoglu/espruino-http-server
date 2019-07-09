@@ -5,22 +5,20 @@ E.on('init', function() {
   var WIFI_NAME = 'TOTOLINK_A3';
   var WIFI_OPTIONS = { password: 'QWERTYUI' };
 
-  var wifi = require('Wifi');
-  wifi.connect(
-    WIFI_NAME,
-    WIFI_OPTIONS,
-    function(err) {
-      if (err) {
-        console.log('Connection error: ' + err);
-        return;
-      }
-      console.log('Connected!');
-      mqtt = MQTT.create('192.168.1.77', { port: 1883 });
-      setTimeout(function() {
-        mqtt.connect();
-        console.log('mqtt-connected')
-      }, 2000);
-      runServer();
+
+  
+  var spi = new SPI()
+  
+  spi.setup({ sck: NodeMCU.D5, mosi: NodeMCU.D7 });
+  var g = require('ILI9163').connect(
+    spi,
+    NodeMCU.D2 /* RS / DC */,
+    NodeMCU.D8 /* CS / CE */,
+    NodeMCU.D1 /*RST*/,
+    function() {
+      g.drawImage(img, 10, 10)
+      
     }
   );
+  digitalWrite(2, 0);
 });
