@@ -15,7 +15,7 @@
   "author": "Cuneyt Aliustaoglu",
   "license": "ISC",
   "devDependencies": {
-    "espruino": "^0.1.12",
+    "espruino": "^0.1.45",
     "uglify-js": "^3.4.7"
   }
 }
